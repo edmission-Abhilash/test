@@ -15,7 +15,7 @@ const puppeteer = require('puppeteer');
   await page.click('button[type="submit"]');
   await page.waitForSelector('#thankyou-message');
   await page.waitForTimeout(2000); 
-  await page.waitForNavigation()
+ // await page.waitForNavigation()
 
   await page.screenshot({ path: 'custom-form-submitted.png' });
 
