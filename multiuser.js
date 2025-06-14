@@ -8,11 +8,7 @@ function generateFakeUser() {
     return {name, email};
 
 }
-
-
-const HEADLESS = false;
-
-
+const HEADLESS = true;
 runBot(3);
 
 async function runBot(times = 5) {
