@@ -23,7 +23,10 @@ function generateFakeUser() {
 
 const HEADLESS = false;
 
-runBot(10); 
+
+runBot(15); 
+
+
 
 async function runBot(times = 5) {
   const browser = await puppeteer.launch({ headless: HEADLESS });
